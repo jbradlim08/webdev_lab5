@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Volunteer Form</h1>
+        <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+            <fieldset>
+                <!--My Info-->
+                <legend>My Info</legend>
+                <table>
+                    <tr>
+                        <td>firstname</td>
+                        <td>:</td>
+                        <td><div><label><input size="50" type="text" name="first_name_field" required></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>lastname</td>
+                        <td>:</td>
+                        <td><div><label><input size="50" type="text" name="last_name_field" required></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>phone</td>
+                        <td>:</td>
+                        <td><div><label><input size="50" type="tel" name="phone_field" required></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>:</td>
+                        <td><div><label><input size="50" type="email" name="email_field" required></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>
+                            <div><label>Male<input type="radio" name="gender_field" required> Female<input type="radio" name="gender_field" required></label></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>:</td>
+                        <td>
+                            <div>
+                                <select name="age_field">
+                                    <option>under 18</option>
+                                    <option>over 18</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!--My Availability-->
+            <fieldset>
+                <legend>My availability</legend>
+                <h2>Days Available:</h2>
+                <table>
+                    <tr>
+                        <td>Sunday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Sunday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Monday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Tuesday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Wednesday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Thursday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Friday"></label></div></td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td><div><label><input type="checkbox" name="available_field[]" value="Saturday"></label></div></td>
+                    </tr>
+                </table>
+                <h2>Comments:</h2>
+                <div>
+                    <textarea rows="5" cols="50" name="comments_field"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <input type="hidden" name="hidden_field" value="javier">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
